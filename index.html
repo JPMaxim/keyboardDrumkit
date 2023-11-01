@@ -7,25 +7,95 @@
     <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="navContainer">
+                <ul>
+                    <li>
+                        <a href="./index.html">Drumkit Project</a>
+                    </li>
+                    <li>
+                        <a href="./initialLearning.html">Initial Keyboard Events Testing</a>
+                    </li>
+                </ul>
+            </div>            
+        </nav>
+    </header>
 
-    <div>
-        <div>
-            <h3>Code</h3>
-            <p id="code">code</p>
-        </div>
-        <div>
-            <h3>Key</h3>
-            <p id="key">key</p>
-        </div>
-    </div>
+    <audio class="audio" id="tomAudio" controls>
+        <source src="./audio/tom.wav" type="audio/wav">
+    </audio>
+    <audio class="audio" id="tinkAudio" controls>
+        <source src="./audio/tink.wav" type="audio/wav">
+    </audio>
+    <audio class="audio" id="snareAudio" controls>
+        <source src="./audio/snare.wav" type="audio/wav">
+    </audio>
+    <audio class="audio" id="rideAudio" controls>
+        <source src="./audio/ride.wav" type="audio/wav">
+    </audio>
+    <audio class="audio" id="openhatAudio" controls>
+        <source src="./audio/openhat.wav" type="audio/wav">
+    </audio>
+    <audio class="audio" id="kickAudio" controls>
+        <source src="./audio/kick.wav" type="audio/wav">
+    </audio>
+    <audio class="audio" id="hihatAudio" controls>
+        <source src="./audio/hihat.wav" type="audio/wav">
+    </audio>
+    <audio class="audio" id="clapAudio" controls>
+        <source src="./audio/clap.wav" type="audio/wav">
+    </audio>
+    <audio class="audio" id="boomAudio" controls>
+        <source src="./audio/boom.wav" type="audio/wav">
+    </audio>
 
-    <div>  
-        <h1>Live Typing</h1>    
-        <p>try backspace too</p>  
-        <label for="input">Enter some text:<br></label>
-        <input id="input" type="text" >
-        <hp id="inputText"></p>
-    </div>
+    <main>
+        <div id="mainContainer">
+            <div class="sectionContainer">
+                <div id="drumkitContainer">
+                    <div class="pieceOfKit" id="tom">
+                        <h3>Tom</h3>
+                        <p>Press A</p>
+                    </div>
+                    <div class="pieceOfKit" id="tink">
+                        <h3>Tink</h3>
+                        <p>Press E</p>
+                    </div>
+                    <div class="pieceOfKit" id="snare">
+                        <h3>Snare</h3>
+                        <p>Press R</p>
+                    </div>
+                    <div class="pieceOfKit" id="ride">
+                        <h3>Ride</h3>
+                        <p>Press G</p>
+                    </div>
+                    <div class="pieceOfKit" id="openhat">
+                        <h3>Openhat</h3>
+                        <p>Press H</p>
+                    </div>
+                    <div class="pieceOfKit" id="kick">
+                        <h3>Kick</h3>
+                        <p>Press I</p>
+                    </div>
+                    <div class="pieceOfKit" id="hihat">
+                        <h3>Hihat</h3>
+                        <p>Press O</p>
+                    </div>
+                    <div class="pieceOfKit" id="clap">
+                        <h3>Clap</h3>
+                        <p>Press Apostrophy</p>
+                    </div>
+                    <div class="pieceOfKit" id="boom">
+                        <h3>Boom</h3>
+                        <p>Press Spacebar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
 
     <script src="./app.js"></script>
 </body>
